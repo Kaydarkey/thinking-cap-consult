@@ -3,53 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thinking Cap Consult</title>
+    <title>Thinking Cap Consult - Fashion & Business Growth Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="about.html" class="dropbtn">About Us</a>
-                    <div class="dropdown-content">
-                        <a href="#about-info">About us info</a>
-                        <a href="#mission">Vision and Mission</a>
-                        <a href="about/founder.html">About the founder</a>
-                        <a href="#core-values">Core Values</a>
-                        <a href="#logo">Logo</a>
-                    </div>
-                </li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="images/Thinking Cap Consult-03.jpg" alt="Thinking Cap Consult" class="nav-logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about.html" class="dropbtn">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="about.html#about-info">About Us Info</a>
+                                <a href="about.html#mission-vision">Vision and Mission</a>
+                                <a href="about/founder.html">About the Founder</a>
+                                <a href="about.html#core-values">Core Values</a>
+                                <a href="about.html#logo">Our Logo</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropbtn">Services/Packages</a>
+                            <div class="dropdown-content">
+                                <a href="fashion.html">Fashion Consult</a>
+                                <a href="services.html#business-growth">Business Growth Services</a>
+                            </div>
+                        </li>
+                        <li><a href="about/founder.html">About The Founder</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="home" class="hero">
-            
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="images/Thinking Cap Consult-03.jpg" alt="Thinking Cap Consult Logo" class="hero-logo">
+                    <h1>Thinking Cap Consult</h1>
+                    <p>Fashion & Business Growth Services</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">Explore Services</a>
+                        <a href="contact.html" class="btn-secondary">Get Started</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="features">
-            <h2>Our Features</h2>
-            <div class="feature">
-                <h3>Expert Team</h3>
-                <p>Our team consists of industry experts with years of experience.</p>
+
+        <!-- About Us Preview -->
+        <section id="about-preview" class="about-preview">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Thinking Cap Consult specializes in fashion consulting and business growth services for fashion & creative entrepreneurs. We help individuals, brands, and businesses achieve <strong>Purpose, Clarity, and Longevity</strong>.</p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <h3>Vision</h3>
+                        <p>To be the leading consulting firm for fashion and creative entrepreneurs</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Mission</h3>
+                        <p>Empowering fashion and creative businesses with tailored solutions for sustainable growth</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Core Values</h3>
+                        <p>Purpose • Clarity • Longevity • Excellence • Innovation</p>
+                    </div>
+                </div>
+                <a href="about.html" class="btn-link">Learn More About Us</a>
             </div>
-            <div class="feature">
-                <h3>Custom Solutions</h3>
-                <p>We provide tailored solutions to meet your specific needs.</p>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="services-overview">
+            <div class="container">
+                <h2>Our Services/Packages</h2>
+                
+                <div class="service-category">
+                    <h3>Fashion Consult</h3>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <span class="service-number">01</span>
+                            <h4>Glamour & Grace</h4>
+                            <p>Special Event Fashion Consult</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-number">02</span>
+                            <h4>Picture Perfect</h4>
+                            <p>Photo shoot Fashion Consult</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-number">03</span>
+                            <h4>Second Opinion</h4>
+                            <p>Style Confirmation & Guidance</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-number">04</span>
+                            <h4>Style Discovery</h4>
+                            <p>Personalized Fashion Consult</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-number">05</span>
+                            <h4>Creative Couture</h4>
+                            <p>Fashion Design & Illustration</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-number">06</span>
+                            <h4>Fashion Concierge</h4>
+                            <p>Personal Shopping Assistance</p>
+                        </div>
+                    </div>
+                    <a href="fashion.html" class="btn-link">View Fashion Services</a>
+                </div>
+
+                <div class="service-category">
+                    <h3>Business Growth Services</h3>
+                    <div class="business-services">
+                        <div class="core-services">
+                            <h4>Our Core Services</h4>
+                            <ul>
+                                <li>Sales & Marketing</li>
+                                <li>Business Planning & Strategy</li>
+                                <li>Business Management & Policies</li>
+                                <li>Customer Experience & Service Excellence</li>
+                            </ul>
+                        </div>
+                        <div class="service-packages">
+                            <h4>Service Packages</h4>
+                            <ul>
+                                <li>Private Clarity Session</li>
+                                <li>Knowledge Offers (eBooks & PDFs)</li>
+                                <li>Vendor Connect</li>
+                                <li>Team Development & Staff Training</li>
+                                <li>Data & Systems Support</li>
+                                <li>Comprehensive Audit Package</li>
+                                <li>Advanced Packages</li>
+                                <li>Courses & Webinars</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="services.html" class="btn-link">View Business Services</a>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Reliable Support</h3>
-                <p>Our support team is available 24/7 to assist you.</p>
+        </section>
+
+        <!-- About The Founder -->
+        <section id="founder-preview" class="founder-preview">
+            <div class="container">
+                <h2>About The Founder</h2>
+                <div class="founder-content">
+                    <div class="founder-image">
+                        <img src="images/angie.jpg" alt="Angela Dzifa Darkey" />
+                    </div>
+                    <div class="founder-text">
+                        <h3>Angela Dzifa Darkey</h3>
+                        <p><strong>Angela Dzifa Darkey</strong>, founder of Thinking Cap Consult, Ghana, holds a BSc in Fashion Design (KNUST), an MSc in Marketing (KNUST), and an MBA from the University of East London.</p>
+                        <p>Her extensive professional certifications span Digital Marketing, Customer Service Excellence, Artificial Intelligence, Strategic Communication, Data Analytics & Visualization, Event Management, and Project & Innovation Management.</p>
+                        <p>With Thinking Cap Consult, Angela bridges her dual expertise in fashion and business consulting, helping fashion and creative entrepreneurs achieve Purpose, Clarity, and Longevity.</p>
+                        <a href="about/founder.html" class="btn-link">Read Full Bio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-choose-us" class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <div class="reasons-grid">
+                    <div class="reason">
+                        <h3>1. Tailored Solutions, Not Templates</h3>
+                        <p>We don't give you copy-and-paste strategies. Every solution is crafted to fit your individual, brand & business' unique needs, goals, and growth stage.</p>
+                    </div>
+                    <div class="reason">
+                        <h3>2. Fashion & Creative Industry Expertise</h3>
+                        <p>Unlike generic consultants, we specialize in fashion and creative businesses, meaning we understand your challenges, your customers, and the trends that drive your success.</p>
+                    </div>
+                    <div class="reason">
+                        <h3>3. Purpose, Clarity & Longevity</h3>
+                        <p>We don't just solve today's problems. We build strategies that help you grow with intention, stand out with confidence, and sustain long-term impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who Our Services Are For -->
+        <section id="who-services-for" class="who-services-for">
+            <div class="container">
+                <h2>Who Our Services Are For</h2>
+                <div class="target-audience">
+                    <div class="audience-category">
+                        <h3>Fashion Consult</h3>
+                        <ul>
+                            <li><strong>Special Occasions:</strong> Got a special occasion coming up and want to make a statement? Perfect for weddings, job interviews, etc.</li>
+                            <li><strong>Second Opinion:</strong> Need validation to rock your look? We provide guidance on how to put it all together.</li>
+                            <li><strong>Photoshoot Preparation:</strong> Look your best for photoshoots with our concept-to-styling services.</li>
+                            <li><strong>Custom Design Needs:</strong> Fashion illustrations, technical drawings, and one-of-a-kind pieces.</li>
+                            <li><strong>Personal Shopping:</strong> Personalized assistance to find perfect accessories and garments.</li>
+                            <li><strong>Style Discovery:</strong> Discover your personal style and create a wardrobe that fits your lifestyle.</li>
+                        </ul>
+                    </div>
+                    <div class="audience-category">
+                        <h3>Business Consult</h3>
+                        <ul>
+                            <li><strong>Fashion & Creative Entrepreneurs:</strong> Starting out or scaling your business with tailored guidance.</li>
+                            <li><strong>Aspiring Business Owners:</strong> Turn your vision into a tangible plan and launch process.</li>
+                            <li><strong>Existing Business Owners:</strong> Identify growth areas and increase profitability.</li>
+                            <li><strong>Leaders in Fashion & Creative Businesses:</strong> Develop strategic skills for career advancement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TCC Membership Community -->
+        <section id="membership" class="membership">
+            <div class="container">
+                <h2>TCC Membership Community – Join Now</h2>
+                <div class="membership-content">
+                    <p>Are you a fashion or creative entrepreneur at various stages (early ideas, startup, or existing business)?</p>
+                    <p>Want to build a thriving, purposeful and long-lasting business with EXCLUSIVE content, resources and coaching sessions?</p>
+                    <div class="membership-benefits">
+                        <h3>Benefits Include:</h3>
+                        <ul>
+                            <li>Exclusive content and resources</li>
+                            <li>Coaching sessions for business growth</li>
+                            <li>Supportive community network</li>
+                            <li>Regular check-ins and guidance</li>
+                        </ul>
+                    </div>
+                    <p class="membership-note"><strong>Slots are LIMITED.</strong></p>
+                    <div class="membership-cta">
+                        <p>Join by sending the keyword <strong>"JOIN TCC MEMBERSHIP"</strong> to:</p>
+                        <ul>
+                            <li>@thinkingcapconsult via Instagram DM</li>
+                            <li>thinkingcapconsult@gmail.com via email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Products -->
+        <section id="digital-products" class="digital-products">
+            <div class="container">
+                <h2>Digital Products – Invest in Your Growth</h2>
+                <div class="products-grid">
+                    <div class="product">
+                        <h3>eBooks & PDFs</h3>
+                        <ul>
+                            <li>The Ideal Business Plan</li>
+                            <li>Customer Service Cheat Code</li>
+                            <li>Strategy Cheat Sheet</li>
+                            <li>And more...</li>
+                        </ul>
+                    </div>
+                    <div class="product">
+                        <h3>Membership Community</h3>
+                        <p>Exclusive access to resources, consulting sessions, and supportive network</p>
+                    </div>
+                </div>
+                <p class="investment-note">Invest in your self and brand growth with our comprehensive digital resources.</p>
+                <a href="contact.html" class="btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>Client Reviews & Testimonials</h2>
+                
+                <!-- Client Ratings Gallery -->
+                <div class="ratings-gallery">
+                    <h3>Client Ratings & Feedback</h3>
+                    <div class="ratings-grid">
+                        <img src="images/IMG_3134.jpeg" alt="Client Rating 1" class="rating-image">
+                        <img src="images/IMG_3135.jpeg" alt="Client Rating 2" class="rating-image">
+                        <img src="images/IMG_3136.jpeg" alt="Client Rating 3" class="rating-image">
+                        <img src="images/IMG_3137.jpeg" alt="Client Rating 4" class="rating-image">
+                        <img src="images/IMG_3142.jpeg" alt="Client Rating 5" class="rating-image">
+                    </div>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p>"Thinking Cap Consult transformed my fashion business with their strategic approach and industry expertise."</p>
+                        <cite>- Fashion Entrepreneur</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Angela's guidance helped me discover my personal style and build confidence in my fashion choices."</p>
+                        <cite>- Style Discovery Client</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The business growth services provided the clarity and systems I needed to scale my creative business."</p>
+                        <cite>- Creative Business Owner</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action -->
+        <section id="start-now" class="cta">
+            <div class="container">
+                <h2>Start Now</h2>
+                <p>Ready to transform your fashion or business journey?</p>
+                <div class="cta-steps">
+                    <h3>Steps to Begin:</h3>
+                    <ol>
+                        <li>DM "FASHION CONSULT" or "BUSINESS GROWTH" to @thinkingcapconsult</li>
+                        <li>Or email: thinkingcapconsult@gmail.com</li>
+                        <li>Scan QR code to access rate card</li>
+                    </ol>
+                </div>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Contact Us Now</a>
+                    <a href="services.html" class="btn-secondary">View All Services</a>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Contact Details Footer -->
     <footer>
-        <p>&copy; 2024 Thinking Cap Consult. All rights reserved.</p>
+        <div class="container">
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <p><strong>Instagram:</strong> @thinkingcapconsult</p>
+                <p><strong>Email:</strong> thinkingcapconsult@gmail.com</p>
+            </div>
+            <p>&copy; 2024 Thinking Cap Consult. All rights reserved.</p>
+        </div>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
