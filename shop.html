@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - Thinking Cap Consult</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="images/Thinking Cap Consult-03.jpg" alt="Thinking Cap Consult" class="nav-logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about.html" class="dropbtn">About Us</a>
+                            <div class="dropdown-content">
+                                <a href="about.html#about-info">About Us Info</a>
+                                <a href="about.html#mission-vision">Vision and Mission</a>
+                                <a href="about/founder.html">About the Founder</a>
+                                <a href="about.html#core-values">Core Values</a>
+                                <a href="about.html#logo">Our Logo</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropbtn">Services/Packages</a>
+                            <div class="dropdown-content">
+                                <a href="fashion.html">Fashion Consult</a>
+                                <a href="services.html">Business Growth Services</a>
+                                <a href="packages.html">All Packages</a>
+                            </div>
+                        </li>
+                        <li><a href="about/founder.html">About The Founder</a></li>
+                        <li><a href="shop.html">Shop Now</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Shop Now</h1>
+                <p>Discover our exclusive digital products and services</p>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="shop-section">
+            <div class="container">
+                <h2>Featured Products</h2>
+                
+                <!-- Digital Product -->
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/digital.PNG" alt="Digital Product" class="product-img">
+                            <div class="discount-badge">10% OFF</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Digital Consulting Package</h3>
+                            <div class="price-container">
+                                <span class="original-price">₵60.00</span>
+                                <span class="sale-price">₵54.00</span>
+                            </div>
+                            <p class="product-description">
+                                Comprehensive digital consulting package designed to elevate your fashion and business strategies. 
+                                Get expert guidance and actionable insights delivered digitally.
+                            </p>
+                            <div class="product-features">
+                                <h4>What's Included:</h4>
+                                <ul>
+                                    <li>Digital consultation session</li>
+                                    <li>Personalized strategy guide</li>
+                                    <li>Follow-up support</li>
+                                    <li>Digital resources and templates</li>
+                                </ul>
+                            </div>
+                            <div class="purchase-options">
+                                <button class="btn-purchase" onclick="purchaseProduct()">Purchase Now - ₵60.00</button>
+                                <p class="discount-info">🎉 <strong>Special Offer:</strong> Save 10% when you purchase from our website!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Products Section -->
+                <div class="more-products">
+                    <h3>More Products Coming Soon</h3>
+                    <p>Stay tuned for more exclusive digital products and services to help you succeed in fashion and business.</p>
+                    <a href="contact.html" class="btn-secondary">Get Notified</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Shop With Us -->
+        <section class="why-shop">
+            <div class="container">
+                <h2>Why Shop With Us?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💡</div>
+                        <h3>Expert Guidance</h3>
+                        <p>Get insights from Angela Dzifa Darkey, a certified expert in fashion and business consulting.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Exclusive Discounts</h3>
+                        <p>Enjoy 10% off all digital products when you purchase directly from our website.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Instant Access</h3>
+                        <p>Get immediate access to your digital products and start implementing strategies right away.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Tailored Solutions</h3>
+                        <p>All products are specifically designed for fashion and creative entrepreneurs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Thinking Cap Consult. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function purchaseProduct() {
+            alert('Thank you for your interest! Please contact us at thinkingcapconsult@gmail.com or WhatsApp to complete your purchase and receive your 10% discount.');
+            window.location.href = 'contact.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

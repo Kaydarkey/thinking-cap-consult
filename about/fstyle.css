@@ -6,11 +6,13 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styles */
@@ -295,5 +297,457 @@ form button:hover {
 .package ul {
     list-style: disc;
     padding-left: 20px;
+}
+
+/* Portfolio Style CSS */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    height: 70vh;
+    background: linear-gradient(135deg, #47a9dd 0%, #74cdbe 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Founder Profile Section */
+.founder-profile-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #47a9dd, #74cdbe);
+}
+
+.profile-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #47a9dd;
+    box-shadow: 0 15px 35px rgba(71, 169, 221, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    margin-top: 30px;
+}
+
+.founder-title h2 {
+    font-size: 2.5rem;
+    color: #47a9dd;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.founder-title p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+
+.company-name {
+    font-weight: 600;
+    color: #74cdbe !important;
+}
+
+.profile-content {
+    padding-left: 20px;
+}
+
+.intro-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.intro-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #47a9dd, #74cdbe);
+}
+
+.founder-intro, .founder-certifications, .founder-mission {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #555;
+    text-align: justify;
+}
+
+.founder-mission strong {
+    color: #47a9dd;
+    font-weight: 700;
+}
+
+/* Credentials Section */
+.credentials-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.credential-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #47a9dd;
+}
+
+.credential-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.credential-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.education-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #74cdbe;
+}
+
+.education-item h4 {
+    font-size: 1.3rem;
+    color: #47a9dd;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.education-item p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cert-tag {
+    background: linear-gradient(135deg, #47a9dd, #74cdbe);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.cert-tag:hover {
+    transform: scale(1.05);
+}
+
+.cert-source {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* Expertise Showcase */
+.expertise-showcase {
+    padding: 80px 0;
+    background: white;
+}
+
+.expertise-showcase h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.expertise-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #47a9dd;
+}
+
+.expertise-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.expertise-card h3 {
+    font-size: 1.5rem;
+    color: #47a9dd;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.expertise-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #47a9dd 0%, #74cdbe 100%);
+    color: white;
+}
+
+.mission-card {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.mission-card blockquote {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+    position: relative;
+    padding: 0 40px;
+}
+
+.mission-card blockquote::before,
+.mission-card blockquote::after {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.mission-card blockquote::before {
+    top: -20px;
+    left: 0;
+}
+
+.mission-card blockquote::after {
+    bottom: -40px;
+    right: 0;
+}
+
+.mission-card cite {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #47a9dd, #74cdbe);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(71, 169, 221, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #47a9dd;
+    border: 2px solid #47a9dd;
+}
+
+.btn-secondary:hover {
+    background: #47a9dd;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+    
+    .profile-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 30px;
+        gap: 40px;
+    }
+    
+    .profile-content {
+        padding-left: 0;
+    }
+    
+    .credentials-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
