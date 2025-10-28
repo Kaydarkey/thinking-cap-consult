@@ -932,6 +932,19 @@ form button:hover {
     border: 2px dashed #47a9dd;
 }
 
+.qr-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+    transform: scale(1.05);
+}
+
 .service-contact {
     margin: 3rem 0;
 }
