@@ -110,14 +110,19 @@ header nav {
     align-items: center;
 }
 
+/* Navigation bar styles */
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 header nav ul li {
-    margin-left: 20px;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    position: relative; /* Required for dropdown positioning */
+    margin-left: 15px;
 }
 
 header nav ul li a {
@@ -138,27 +143,16 @@ header nav ul li a:hover {
     transform: translateY(-5px) rotateX(10deg); /* 3D hover effect */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
-/* Navigation bar styles */
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-header nav ul li {
-    position: relative; /* Required for dropdown positioning */
-}
 
 @media (max-width: 768px) {
     header {
-        padding: 8px 0;
+        padding: 10px 0;
     }
     
     .header-content {
         flex-direction: column;
-        gap: 1rem;
+        gap: 15px;
+        align-items: center;
     }
     
     .nav-logo {
@@ -166,24 +160,32 @@ header nav ul li {
         width: 40px;
     }
     
+    header nav {
+        width: 100%;
+    }
+    
     header nav ul {
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 5px;
         align-items: center;
         width: 100%;
+        flex-wrap: nowrap;
     }
     
     header nav ul li {
         margin: 0;
-        width: 100%;
+        width: auto;
         text-align: center;
+        margin-bottom: 5px;
     }
     
     header nav ul li a {
-        padding: 8px 15px;
+        padding: 10px 20px;
         font-size: 0.9rem;
-        display: block;
-        width: 100%;
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        white-space: nowrap;
     }
     
     .dropdown-content {
@@ -192,6 +194,12 @@ header nav ul li {
         box-shadow: none;
         background-color: #f1f1f1;
         margin-top: 5px;
+        width: 100%;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: static;
     }
 }
 
